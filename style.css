@@ -1,0 +1,204 @@
+html {
+    scroll-behavior: smooth; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+    text-align: center;
+}
+
+
+#topbanner {
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+#navbar {
+    background-color: #333;
+    margin-top: 15px;
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.menu-link {
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.menu-link:hover,
+.menu-link:focus {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+
+.paragraph-text {
+    font-size: 1.1rem;
+    margin: 20px;
+    text-align: center;
+}
+
+.emoji-text {
+    font-size: 2rem;
+    text-align: center;
+    margin: 30px 0;
+}
+
+
+.ordered-list, .unordered-list {
+    margin: 20px auto;
+    padding: 10px 40px;
+    max-width: 400px;
+}
+.ordered-list li, .unordered-list li {
+    margin: 5px 0;
+    font-size: 1.1rem;
+}
+
+
+.site-link {
+    color: #0066cc;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.site-link:hover {
+    color: #ff4500;
+    text-decoration: underline;
+}
+
+
+.image-section {
+    text-align: center;
+    margin: 30px 0;
+}
+#main-image {
+    width: 300px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+#main-image:hover {
+    transform: scale(1.05);
+}
+
+
+.btn-hover-effect {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.btn-hover-effect:hover {
+    background-color: #e63e00;
+    transform: translateY(-3px);
+}
+.btn-hover-effect:focus {
+    outline: 3px solid #222;
+}
+
+
+.schedule-section {
+    margin: 40px auto;
+    text-align: center;
+}
+.schedule-table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.schedule-table th, .schedule-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+.schedule-table th {
+    background-color: #4facfe;
+    color: white;
+}
+.schedule-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+.schedule-table tr:hover {
+    background-color: #d0e7ff;
+}
+
+
+.form-section {
+    background-color: #eef2f7;
+    padding: 30px;
+    margin: 30px auto;
+    text-align: center;
+    border-radius: 10px;
+    width: 50%;
+}
+#user-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-input {
+    margin: 10px 0;
+    padding: 8px;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+.submit-btn {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.submit-btn:hover {
+    background-color: #3e8e41;
+}
+
+
+#footer-container {
+    background-color: #222;
+    color: #ccc;
+    text-align: center;
+    padding: 15px;
+}
+.footer-text {
+    margin: 0;
+    font-size: 0.9rem;
+}
