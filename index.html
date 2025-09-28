@@ -7,100 +7,166 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header id="topbanner">
-        <h1 class="header-title">Chepurnenko Sergey</h1>
-        <h2 class="section-heading">Web Technologies Frontend</h2>
-        <h3 class="section-subheading">I`m a student of Astana IT University.</h3>
+  <div class="page-grid">
+
+    <!--Header-->
+    <header id="topbanner" class="grid-header">
+      <div class="header-container">
+        <div class="logo">
+          <img src="https://w7.pngwing.com/pngs/695/396/png-transparent-logo-animation-blue-posters-angle-text-trademark.png" alt="Logo" class="logo-img">
+        </div>
 
         <nav id="navbar">
-            <ul class="nav-list">
-                <li><a href="#hobbies" class="menu-link">Hobbies</a></li>
-                <li><a href="#websites" class="menu-link">Websites</a></li>
-                <li><a href="#schedule" class="menu-link">Schedule</a></li>
-                <li><a href="#form" class="menu-link">Form</a></li>
-            </ul>
+          <ul class="nav-list">
+            <li><a href="#hobbies" class="menu-link">Hobbies</a></li>
+            <li><a href="#websites" class="menu-link">Websites</a></li>
+            <li><a href="#schedule" class="menu-link">Schedule</a></li>
+            <li><a href="#form" class="menu-link">Form</a></li>
+          </ul>
         </nav>
+      </div>
     </header>
 
-    <p class="paragraph-text">I`m from Kostanay </p>
-    <hr>
+    <!--Sidebar-->
+    <aside class="grid-sidebar">
+      <nav>
+        <ul class="nav-list flex-column">
+          <li><a href="#hobbies" class="menu-link">Hobbies</a></li>
+          <li><a href="#websites" class="menu-link">Websites</a></li>
+          <li><a href="#schedule" class="menu-link">Schedule</a></li>
+          <li><a href="#form" class="menu-link">Form</a></li>
+        </ul>
+      </nav>
+    </aside>
 
-    <section id="hobbies" class="hobbies-section">
+    <!--Main content-->
+    <main class="grid-main">
+
+      <section id="about-me" class="about-me-section">
+        <h3 class="section-heading">About Me</h3>
+         <div class="about-me-container">
+            <div class="about-me-left">
+              <img src="images/photo_2025-09-28_18-09-26.jpg" alt="My Photo" class="about-me-img">
+              <h4 class="about-me-name">Sergey Chepurnenko</h4>
+            </div>
+         <div class="about-me-right">
+                <p>Hello! I'm from Kostanay. I am a first-year student passionate about web development, programming, and digital culture. In my free time, I enjoy playing computer games, watching football, and exploring new technologies.</p>
+         </div>
+        </div>
+      </section>
+
+      <!--Hobbies-->
+      <section id="hobbies" class="hobbies-section">
         <h3 class="section-heading">My Hobbies</h3>
-        <ol class="ordered-list">
-            <li>Computer games</li>
-            <li>Football</li>
-            <li>Poker</li>
-        </ol>
-    </section>
+        <div class="card-row">
+          <div class="card">
+            <img src="https://cs12.pikabu.ru/post_img/2019/12/06/7/og_og_1575627240267535537.jpg" alt="Computer Games">
+            <h4>Computer Games</h4>
+            <p>Spending time playing various computer games.</p>
+            <button>Learn More</button>
+          </div>
 
-    <section id="websites" class="websites-section">
+          <div class="card">
+            <img src="https://avatars.mds.yandex.net/i?id=37414513d61ceb3517801ca5648c8075_l-5079356-images-thumbs&n=13" alt="Football">
+            <h4>Football</h4>
+            <p>Enjoy playing and watching football matches.</p>
+            <button>Learn More</button>
+          </div>
+
+          <div class="card">
+            <img src="https://avatars.mds.yandex.net/i?id=3f62119752c9f935e76883387f82d385_sr-5284079-images-thumbs&n=13" alt="Poker">
+            <h4>Poker</h4>
+            <p>Playing poker with friends and online tournaments.</p>
+            <button>Learn More</button>
+          </div>
+        </div>
+      </section>
+
+      <!--Favorite Websites-->
+      <section id="websites" class="websites-section">
         <h3 class="section-heading">Favorite Websites</h3>
         <ul class="unordered-list">
-            <li><a class="site-link" href="https://youtube.com/" target="_blank">YouTube</a></li>
-            <li><a class="site-link" href="https://twitch.com/" target="_blank">Twitch</a></li>
-            <li><a class="site-link" href="https://kick.com/" target="_blank">Kick</a></li>
+          <li><a class="site-link" href="https://youtube.com/" target="_blank">YouTube</a></li>
+          <li><a class="site-link" href="https://twitch.com/" target="_blank">Twitch</a></li>
+          <li><a class="site-link" href="https://kick.com/" target="_blank">Kick</a></li>
         </ul>
-    </section>
-    <hr>
+      </section>
 
-    <section class="image-section">
-        <img id="main-image" src="https://avatars.mds.yandex.net/i?id=dfeeb64bb06f04a492117f9aa7f92cc742ec0203-4558686-images-thumbs&n=13" alt="Just yandex">
-        <button class="btn-hover-effect">Click me!</button>
-    </section>
+      <!--Image Gallery-->
+      <section class="gallery-section">
+        <h3 class="section-heading">Image Gallery</h3>
+        <div class="gallery-grid">
+          <div class="gallery-item"><img src="images/photo_2025-09-28_18-21-21.jpg" alt=""><span class="caption">My achievment</span></div>
+          <div class="gallery-item"><img src="images/photo_2025-09-28_18-20-02.jpg" alt=""><span class="caption">Beautiful car</span></div>
+          <div class="gallery-item"><img src="https://i3.wp.com/cs13.pikabu.ru/post_img/big/2023/01/14/7/1673694718187134233.jpg?resize=728%2C728&ssl=1" alt=""><span class="caption">Tusk dota 2</span></div>
+          <div class="gallery-item"><img src="https://i.pinimg.com/originals/d8/b9/f0/d8b9f04f4c0d48c1ee76850bea74abad.jpg" alt=""><span class="caption">Favourite film</span></div>
+          <div class="gallery-item"><img src="https://i.pinimg.com/736x/00/f1/43/00f14344d07cc7551ee5daf72114095c.jpg" alt=""><span class="caption">Favourite team</span></div>
+          <div class="gallery-item"><img src="https://avatars.mds.yandex.net/get-eda/14046028/d79d56c9f7139ac3b9d2a8c0b0e3ae54/orig" alt=""><span class="caption">Favourite drink</span></div>
+          <div class="gallery-item"><img src="https://avatars.mds.yandex.net/i?id=58a1ef372b3513f2120eb6251b386ef2797599c2033518bc-10700905-images-thumbs&n=13" alt=""><span class="caption">Favourite Marvel hero</span></div>
+          <div class="gallery-item"><img src="https://i.pinimg.com/736x/99/cd/83/99cd838ab4ef815f41f000611d170ab8.jpg" alt=""><span class="caption">The best car</span></div>
+          <div class="gallery-item"><img src="https://avatars.mds.yandex.net/i?id=1f59cfa130de2a0bd4ffe1ded003eb45_l-4868622-images-thumbs&n=13" alt=""><span class="caption">One more cool car</span></div>
+        </div>
+      </section>
 
-    <section id="schedule" class="schedule-section">
+      <!--Schedule-->
+      <section id="schedule" class="schedule-section">
         <h3 class="section-heading">Weekly Schedule</h3>
         <table class="schedule-table">
-            <tr>
-                <th>Subject</th>
-                <th>Day</th>
-                <th>Time</th>
-            </tr>
-            <tr>
-                <td>DAA</td>
-                <td>Monday</td>
-                <td>14:00-16:00</td>
-            </tr>
-            <tr>
-                <td>Frontend</td>
-                <td>Tuesday</td>
-                <td>18:00-20:00</td>
-            </tr>
-            <tr>
-                <td>Finance</td>
-                <td>Friday</td>
-                <td>14:00-16:00</td>
-            </tr>
-            <tr>
-                <td>Frontend</td>
-                <td>Friday</td>
-                <td>16:00-18:00</td>
-            </tr>
-            <tr>
-                <td>Kazakh language</td>
-                <td>Friday</td>
-                <td>18:00-20:00</td>
-            </tr>
+          <tr>
+            <th>Subject</th>
+            <th>Day</th>
+            <th>Time</th>
+          </tr>
+          <tr>
+            <td>DAA</td>
+            <td>Monday</td>
+            <td>14:00-16:00</td>
+          </tr>
+          <tr>
+            <td>Frontend</td>
+            <td>Tuesday</td>
+            <td>18:00-20:00</td>
+          </tr>
+          <tr>
+            <td>Finance</td>
+            <td>Friday</td>
+            <td>14:00-16:00</td>
+          </tr>
+          <tr>
+            <td>Frontend</td>
+            <td>Friday</td>
+            <td>16:00-18:00</td>
+          </tr>
+          <tr>
+            <td>Kazakh language</td>
+            <td>Friday</td>
+            <td>18:00-20:00</td>
+          </tr>
         </table>
-    </section>
+      </section>
 
-    <p class="emoji-text">🤔 😐 😴</p>
+      <p class="emoji-text">🤔 😐 😴</p>
 
-    <section id="form" class="form-section">
+      <!--Form-->
+      <section id="form" class="form-section">
         <form id="user-form">
-            <label for="fname">Name:</label><br>
-            <input type="text" id="fname" name="fname" class="form-input"><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" class="form-input"><br>
-            <label for="favcolor">Choose favorite color:</label><br>
-            <input type="color" id="favcolor" name="favcolor" class="form-input" value="#ff0000"><br>
-            <input type="submit" class="submit-btn" value="Submit">
+          <label for="fname">Name:</label><br>
+          <input type="text" id="fname" name="fname" class="form-input"><br>
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" class="form-input"><br>
+          <label for="favcolor">Choose favorite color:</label><br>
+          <input type="color" id="favcolor" name="favcolor" class="form-input" value="#ff0000"><br>
+          <input type="submit" class="submit-btn" value="Submit">
         </form>
-    </section>
+      </section>
 
-    <footer id="footer-container">
-        <p class="footer-text">© 2025 Chepurnenko Sergey</p>
+    </main>
+
+    <!--Footer-->
+    <footer id="footer-container" class="grid-footer">
+      <p class="footer-text">© 2025 Chepurnenko Sergey</p>
     </footer>
+
+  </div>
 </body>
 </html>
