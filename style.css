@@ -164,8 +164,8 @@ h1, h2, h3 {
 .card img,
 .gallery-item img {
     width: 100%;
-    height: auto;        /* вместо фиксированных 400px */
-    max-height: 400px;   /* чтобы не было слишком больших картинок */
+    height: auto;
+    max-height: 400px;
     object-fit: cover;
 }
 
@@ -276,9 +276,9 @@ h1, h2, h3 {
   grid-template-columns: 200px 1fr;
   grid-template-rows: auto 1fr auto;
   gap: 20px;
-  margin: 0;   /* убираем автоматическое центрирование */
+  margin: 0;
   padding: 0;
-  width: 100%; /* растягиваем на весь экран */
+  width: 100%;
 }
 
 .grid-header { 
@@ -360,8 +360,8 @@ h1, h2, h3 {
 }
 
 .card {
-    width: 100%;          /* адаптивная ширина */
-    max-width: 350px;     /* ограничение максимальной ширины */
+    width: 100%;
+    max-width: 350px;
     padding: 28px; 
     display: flex;
     flex-direction: column;
@@ -370,11 +370,11 @@ h1, h2, h3 {
 }
 @media (max-width: 768px) {
   .page-grid {
-    grid-template-columns: 1fr; /* sidebar под main */
+    grid-template-columns: 1fr;
     gap: 10px;
   }
   .grid-sidebar {
-    order: -1;   /* sidebar выше main */
+    order: -1;
     width: 100%;
   }
   .card, .gallery-item {
