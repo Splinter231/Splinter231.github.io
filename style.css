@@ -161,18 +161,14 @@ h1, h2, h3 {
     gap: 10px; 
 }
 
-.gallery-item {
+.card img,
+.gallery-item img {
     width: 100%;
-    height: 400px; 
-    overflow: hidden;
-    border-radius: 8px;
+    height: auto;        /* вместо фиксированных 400px */
+    max-height: 400px;   /* чтобы не было слишком больших картинок */
+    object-fit: cover;
 }
 
-.card img { 
-    width: 100%; 
-    border-radius: 6px; 
-    margin-bottom: 10px; 
-}
 .card h4 { 
     margin: 10px 0 5px 0; 
     text-align: center; 
@@ -280,8 +276,11 @@ h1, h2, h3 {
   grid-template-columns: 200px 1fr;
   grid-template-rows: auto 1fr auto;
   gap: 20px;
-  margin: 20px;
+  margin: 0;   /* убираем автоматическое центрирование */
+  padding: 0;
+  width: 100%; /* растягиваем на весь экран */
 }
+
 .grid-header { 
     grid-area: header; 
 }
@@ -361,6 +360,26 @@ h1, h2, h3 {
 }
 
 .card {
-    width: 350px; 
+    width: 100%;          /* адаптивная ширина */
+    max-width: 350px;     /* ограничение максимальной ширины */
     padding: 28px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
+@media (max-width: 768px) {
+  .page-grid {
+    grid-template-columns: 1fr; /* sidebar под main */
+    gap: 10px;
+  }
+  .grid-sidebar {
+    order: -1;   /* sidebar выше main */
+    width: 100%;
+  }
+  .card, .gallery-item {
+    width: 100%;
+    height: auto;
+  }
+}
+
