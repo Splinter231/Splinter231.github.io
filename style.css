@@ -16,19 +16,19 @@ body {
 
 .about-me-container {
   display: flex;
-  align-items: center; /* выравнивание по вертикали */
+  align-items: center; 
   justify-content: flex-start;
   gap: 30px;
   flex-wrap: wrap;
 }
 
 .about-me-left {
-  flex: 0 0 180px; /* фиксированная ширина блока с фото */
+  flex: 0 0 180px; 
   text-align: center;
 }
 
 .about-me-right {
-  flex: 1; /* текст занимает оставшееся место */
+  flex: 1; 
   font-size: 1.1rem;
   line-height: 1.6;
 }
@@ -41,7 +41,6 @@ body {
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
-/* Адаптация для телефонов */
 @media (max-width: 768px) {
   .about-me-container {
     flex-direction: column;
@@ -112,7 +111,6 @@ body {
   p { font-size: 0.9rem; }
 }
 
-/* Исправление горизонтального скролла */
 html, body {
   max-width: 100%;
   overflow-x: hidden;
@@ -125,7 +123,7 @@ img {
 .gallery-grid {
   margin: 0 auto;
   max-width: 100%;
-  padding: 0 15px; /* отступы, чтобы картинки не прилипали к краю */
+  padding: 0 15px; 
 }
 /* ===== Task 1 (no Bootstrap) ===== */
 .mq-section { max-width: 1200px; margin: 40px auto; padding: 0 16px; }
@@ -133,7 +131,7 @@ img {
 
 .mq-boxes { 
   display: grid; 
-  grid-template-columns: 1fr;     /* mobile: 1 в ряд */
+  grid-template-columns: 1fr;     
   gap: 16px; 
 }
 .mq-box {
@@ -145,12 +143,10 @@ img {
   font-weight: 600;
 }
 
-/* tablet: 2 в ряд */
 @media (min-width: 768px) {
   .mq-boxes { grid-template-columns: repeat(2, 1fr); }
 }
 
-/* desktop: 3 в ряд */
 @media (min-width: 992px) {
   .mq-boxes { grid-template-columns: repeat(3, 1fr); }
 }
