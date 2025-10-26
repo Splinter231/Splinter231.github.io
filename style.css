@@ -1,10 +1,3 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f4f8;
-  margin: 0;
-  color: #333;
-}
-
 /* About Me */
 .about-me-section {
   background-color: #dceefc;
@@ -13,6 +6,11 @@ body {
   max-width: 1000px;
   margin: 0 auto;
 }
+.hover-box {
+  background-color: #0dcaf0; /* начальный цвет */
+  transition: background-color 0.3s ease; /* плавная смена */
+}
+
 
 .about-me-container {
   display: flex;
@@ -84,13 +82,6 @@ body {
   opacity: 1;
 }
 
-/* Form */
-.form-section {
-  background-color: #eef2f7;
-  padding: 30px;
-  border-radius: 10px;
-}
-
 /* Footer */
 .footer {
   font-size: 0.9rem;
@@ -151,3 +142,74 @@ img {
   .mq-boxes { grid-template-columns: repeat(3, 1fr); }
 }
 
+body {
+  background: linear-gradient(180deg, #f8f9fa, #e9f5ff);
+  font-family: "Poppins", sans-serif;
+}
+
+
+.btn {
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+#hoverBox {
+  cursor: pointer;
+}
+
+.card {
+  border-radius: 12px;
+  margin: 20px auto;
+  max-width: 700px;         
+  padding: 15px;            
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.card-body {
+  padding: 1.2rem !important;
+}
+
+
+.btn {
+  padding: 6px 14px;
+  font-size: 0.9rem;
+}
+
+input, textarea, select {
+  font-size: 0.9rem;
+  padding: 6px;
+}
+
+
+.container main, main.container {
+  max-width: 900px;
+}
+
+
+#hoverBox, #colorBox {
+  width: 250px !important;
+  font-size: 0.9rem;
+  padding: 1.5rem !important;
+}
+
+
+#taskList {
+  max-width: 500px;
+}
+
+#taskList li {
+  transition: all 0.3s ease;
+}
+#taskList li:hover {
+  background-color: #eaf9ff;
+  transform: scale(1.01);
+}
